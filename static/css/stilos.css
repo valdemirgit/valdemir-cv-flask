@@ -1,0 +1,272 @@
+/* ESTILOS GERAIS */
+#div_fundo {
+	background: url(../static/img/perfilGithubValdemir.png) repeat-x;
+  font: 18px "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
+	
+}
+.div2_fundo{
+  background:  #7a7a7a;/* #cdc8b1;*/
+}
+
+/* Base */
+#base-container {
+  background-color:#efefef;
+  border-radius: 20px;
+  box-shadow: .5px 10px 15px rgba(0, 0, 0, 0.2);
+  margin: 25px auto;
+  padding: 25px;
+}
+
+@media(min-width: 768px) {
+  #base-container {
+    margin: 50px auto;
+    padding: 50px;
+  }
+}
+
+#base-container h2 {
+  font-weight: 900;
+  margin-bottom: 30px;
+  
+}
+
+#base-container a {
+  color: #222;
+  transition: .5s;
+}
+
+#base-container base {
+  padding-bottom: 50px;
+}
+
+#base-container .base-control {
+  border: none;
+  border-bottom: 1px solid #CCC;
+  border-radius: 0;
+}
+
+#base-container .base-control:focus {
+  box-shadow: none;
+}
+
+#base-container .base-floating label {
+  color: #CCC;
+}
+
+#base-container .base-floating > .base-control:focus~label {
+  color: #222;
+}
+
+a, i {
+  transition: .5s;
+  text-decoration: none;
+}
+
+.secondary-color {
+  color: #555;
+}
+
+.center-image {
+  background-size: cover;
+  background-position: center;
+}
+
+.btn {
+  text-decoration: none;
+  background-color: #25282e;
+  color: #FFF;
+  padding: 7px 18px;
+  border-radius: 0;
+}
+
+.btn:hover {
+
+  color: #FFF;
+}
+/* HEADER */
+#header {
+  background-color: #050505;
+  text-align: center;
+  padding: 20px;
+  transition: all 300ms ease-in-out;
+  
+}
+
+#header p {
+  margin-bottom: 0;
+  color: #fff;
+}
+
+#logo-container {
+  display: flex;
+  justify-content: center;
+}
+
+#logo {
+  width: 40px; 
+  margin-right: 15px;
+ }
+
+#img-redonda{
+  height: 85px;
+  height: 95px;
+  border-radius: 50%;  
+  
+}
+.cemter-image{
+  block-size: cover;
+  background-position: center;
+
+}
+
+
+/* NAVBAR*/
+#navbar {
+   background-color:#444;
+}
+
+#navbar a {
+  width: 80px;
+  color: #ddd;
+}
+
+#navbar a:hover {
+  color: #999;
+} 
+#navbar-items .navbar-nav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Gallery */
+aside { 
+	width: 350px;
+	float: right;
+	 background: #ddd; /* #999 #ebe7dd; */
+	padding-bottom: 30px;
+	margin-bottom: 20px;
+  border-radius: 12px;
+}
+section#gallery {
+	padding: 0 27px 0 27px;
+  overflow: hidden;
+  
+}
+.gallery-img img {
+  transition: all 300ms ease-in-out;
+}
+
+.gallery-img img:hover {
+  transform: translate(-3%, 3%) scale(1.2) rotate(5deg);
+}
+
+section#gallery a {
+	display: block;
+	background: url(/static/img/vldmr.jpg) no-repeat;
+	float: left;
+	padding: 17px 15px 17px 15px;
+	margin: 10px 0 0 20px;
+}
+
+section#gallery img {
+	margin-left: 2px;
+	margin-top: 3px;
+}
+
+
+/* FOOTER TOP */
+#footer {
+  
+  background-size: cover;
+  width: 100dvw;
+  height: 100vh;
+  padding: 3em 2em;
+ 
+}
+
+#footer-top {
+  margin-bottom: 2em;
+}
+
+#footer-top,
+#footer-top i {
+  color: #fff;
+}
+
+#social-icons {
+  text-align: right;
+  color: #fff;
+}
+
+#social-icons i {
+  margin-right: 1em;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+#social-icons i:hover {
+  color:#fff;
+}
+
+/* FOOTER DETAILS */
+#footer-details {
+  margin-bottom: 3em;
+}
+
+#news-container,
+#contact-container,
+#links-container {
+  padding: 0;
+  border: 0;
+  margin-bottom: 2em;
+}
+
+#footer-details h4 {
+  color: #fff;
+  margin-bottom: 1.5em;
+}
+
+#news-container input {
+  border-radius: 0;
+  border: none;
+}
+
+#links-container li {
+  margin-bottom: 0.5em;
+}
+
+#links-container a {
+  text-decoration: none;
+}
+
+#links-container a:hover {
+  color: #fff;
+}
+
+
+/* FOOTER BOTTOM */
+#footer-bottom {
+  border-top: 1px solid #7a7a7a;
+  padding-top: 2em;
+}
+.bg-dark-color {
+  background-color: #050505;
+}
+
+
+@media (min-width: 568px) {
+  #news-container {
+    padding-right: 2em;
+  }
+
+  #contact-container {
+    padding: 0 2em;
+    border-left: 1px solid #7a7a7a;
+    border-right: 1px solid #7a7a7a;
+  }
+
+  #links-container {
+    padding-left: 2em;
+  }
+}
