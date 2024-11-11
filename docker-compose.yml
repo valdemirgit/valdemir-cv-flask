@@ -1,0 +1,22 @@
+version: '3.9'
+services:
+  mongodb:
+    image: mongo:latest
+    container_name: mongodb
+    environment:
+      ME_CONFIG_MONGODB_ADMINUSERNAME: admin
+      ME_CONFIG_MONGODB_ADMINPASSWORD: admin
+    restart: always
+
+
+  api:
+   build:
+    context: .
+   ports:
+     - 5000:5000
+   restart: always
+   depends_on:
+       - mongodb
+   volumes:
+      - .:/app
+  
