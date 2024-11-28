@@ -1,13 +1,17 @@
+# usamos a imagem oficial do Python:
 FROM python:3.12.7-alpine3.20
 
-EXPOSE 5000
-
+# O diretório de trabalho dentro do Container:
 WORKDIR /app
 
+#copinado o que precisamos para lá :
+COPY app.py .
 COPY requirements.txt .
 
+# Instalando as dependências:
 RUN pip install -r requirements.txt
 
-COPY app.py .
+# Expondo a porta:
+EXPOSE 5000
 
 CMD [ "python","app.py" ]
