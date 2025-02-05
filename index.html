@@ -18,7 +18,7 @@
 
     <aside id='header'>
         <section class="profile">
-            <img src="#" alt="Foto do Valdemir">
+            <img src="/static/img/vldmr.jpg" alt="Foto do Valdemir">
             <h1>Valdemir Alves de Oliveira</h1>
             <div class="social-links mt-4 text-center">
                 <a target="_blank" href="#inicio">
@@ -598,17 +598,7 @@
 
         </section>
 
-
-        {% with messages = get_flashed_messages() %}
-        {% if messages %}
-        {% for message in messages %}
-        <div id="alerta" class="alert alert-success alert-dismissible fade show" role="alert">
-            <i class="bi bi-check-circle-fill"></i> {{ message }}
-            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-        </div>
-        {% endfor %}
-        {% endif %}
-        {% endwith %}
+     
     </main>
 
 
