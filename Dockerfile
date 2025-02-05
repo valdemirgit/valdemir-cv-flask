@@ -14,4 +14,6 @@ RUN pip install -r requirements.txt
 # Expondo a porta:
 EXPOSE 5000
 
-CMD [ "python","app.py" ]
+
+# Comando para rodar a aplicação
+CMD ["flask", "run", "--host=0.0.0.0"]

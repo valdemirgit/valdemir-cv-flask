@@ -1,22 +1,20 @@
-version: '3.9'
+version: '3.8'
+
 services:
-  mongodb:
-    image: mongo:latest
-    container_name: mongodb
-    environment:
-      ME_CONFIG_MONGODB_ADMINUSERNAME: admin
-      ME_CONFIG_MONGODB_ADMINPASSWORD: admin
+  web:
+    build: .
+    container_name: cv_flask_web
+    expose:
+      - "5000"
     restart: always
 
-
-  api:
-   build:
-    context: .
-   ports:
-     - 5000:5000
-   restart: always
-   depends_on:
-       - mongodb
-   volumes:
-      - .:/app
-  
+  nginx:
+    image: nginx:latest
+    container_name: nginx
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./etc/nginx/servers/default.conf
+    depends_on:
+      - web
+    restart: always
